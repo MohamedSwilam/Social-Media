@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Settings</title>
+        <link rel="stylesheet" href="../css/settings.css">
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="logo"><span>C</span>onnect</div>
+            <div class="search">
+                <form class="search-form" method="post">
+                    <input class="input-search" type="text" placeholder="Search" required>
+                    <button class="btn-search"><img src="../images/search.png"></button>
+                </form>
+            </div>
+            <div class="home-profile">
+                <button onclick="redirectHome()" class="btn-home-profile , btn-home">Home</button>
+                <button onclick="redirectProfile()" class="btn-home-profile , btn-profile">Profile</button>
+            </div>
+            
+            <img class="nav-menu" src="../images/menu-button-of-three-horizontal-lines.png">           
+            <div class="nav-bar-dropdown-menu">
+                <button onclick="redirectFriends()"><img src="../images/avatar.png">Friends<div class="counter">2</div></button>
+                <button onclick="redirectMessages()"><img src="../images/envelope.png">Messages<div class="counter">3</div></button>
+                <button onclick="redirectNotifications()"><img src="../images/notification.png">Notifications<div class="counter">4</div></button>
+            </div>
+        </div>
+        
+        <div class="personal-info">
+            <img src="../images/personal-info.png">
+            <p>personal Information</p>
+            <img class="arrowOpen personal-info-arrow" src="../images/angle-arrow-down.png">
+        </div>
+        <div class="personal-info-form">
+            <form>
+                <div>
+                    <label class="lbl lbl-fname">First Name: </label>
+                    <input type="text" class="input fname" placeholder="First Name" required>
+                </div>
+                <div>
+                    <label class="lbl lbl-lname">Last Name: </label>
+                    <input type="text" class="input lname" placeholder="Last Name" required>
+                </div>
+                <div>
+                    <label class="lbl lbl-mobile">Mobile: </label>
+                    <input type="number" class="input mobile" placeholder="Mobile" required>
+                </div>
+                <div>
+                    <label class="lbl lbl-password">New password: </label>
+                    <input type="password" class="input password" placeholder="Password" required>
+                </div>
+                
+                 <div>  
+                    <label class="lbl lbl-birthdate">Birthdate: </label>
+                    <input type="date" class="input birthdate" required>
+                </div>
+                
+                <label class="lbl lbl-Work">Work: </label>
+                <input type="text" class="input work" placeholder="Work title" required>
+                
+                <button class="btn-update">Save Changes</button>
+            </form>
+        </div>
+        
+        <div class="links-info">
+            <img src="../images/unlink.png">
+            <p>Link Accounts</p>
+            <img class="arrowOpen link-accounts-arrow" src="../images/angle-arrow-down.png">
+        </div>
+        <div class="links-info-form">
+            <form>
+                <div>
+                    <label class="lbl lbl-facebook">Facebook: </label>
+                    <input type="text" class="input facebook" placeholder="Facebook" required>
+                </div>
+                <div>
+                    <label class="lbl lbl-twitter">Twitter: </label>
+                    <input type="text" class="input twitter" placeholder="Twitter" required>
+                </div>
+                <div>
+                    <label class="lbl lbl-instgram">Instgram: </label>
+                    <input type="text" class="input instgram" placeholder="Instgram" required>
+                </div>
+                <div>
+                    <label class="lbl lbl-linkedin">Linkedin: </label>
+                    <input type="text" class="input linkedin" placeholder="Linkedin" required>
+                </div>
+                
+                    <label class="lbl lbl-google+">Google+: </label>
+                    <input type="text" class="input google+" placeholder="Google+" required>
+                
+                <button class="btn-update">Save Changes</button>
+            </form>
+        </div>  
+        
+        <div class="pic-info">
+            <img src="../images/user-avatar-main-picture.png">
+            <p>Profile picture & Cover photo</p>
+            <img class="arrowOpen pic-info-arrow" src="../images/angle-arrow-down.png">
+        </div>
+        <div class="pic-info-form">
+            <img class="cover-photo-img" src="../images/tropical-island.jpg">
+            
+            <img class="profile-pic" src="../images/default.jpg">
+            
+            <button onclick="document.getElementById('profile-img').click()" class="upload-img">Update Profile Picture</button>
+            <button onclick="document.getElementById('profile-img').click()" class="upload-img">Update Cover Photo</button>
+            <input type="file" id="profile-img" name="files" style="display:none">
+            <button class="btn-update">Save Changes</button>
+        </div>
+        
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery.nicescroll.js"></script>
+        <script src="../js/settings.js"></script>
+    </body>
+</html>

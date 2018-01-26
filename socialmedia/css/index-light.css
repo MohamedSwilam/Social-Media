@@ -1,0 +1,293 @@
+body{
+    background-color: #ececec;
+    margin: 0px auto;
+    background-image: url("../images/galaxy_s5_2-wallpaper-1280x1024.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-bar{
+    width: 99.96%;
+    height: 70px;
+    background-color: #34495E;
+    -webkit-box-shadow: 0 1px 10px #3242f6;
+    -moz-box-shadow: 0 1px 10px #3242f6;
+    -ms-box-shadow: 0 1px 10px #3242f6;
+    -o-box-shadow: 0 1px 10px #3242f6;
+    box-shadow: 0 4px 10px #000000;
+}
+
+input , button{
+    outline: none;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.logo{
+    color: #ffffff;
+    font-size: 44px;
+    font-weight: bold;
+    margin-left: 15px;
+    display: inline;
+}
+
+.logo span{
+    color: #0091ff;
+    font-size: 55px;
+}
+
+.login{
+    position: relative;
+    left: -104px;
+    display: inline;
+    float: right;
+    margin-left: -50px;
+}
+
+.login-input{
+    width: 230px;
+    height: 17px;
+    margin-top: 13px;
+    border: none;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #0077b5;
+    color: #ffffff;
+    border: 1px solid white;
+    padding: 12px;
+}
+
+.login-input::placeholder{
+    color:white;
+}
+
+.username-login{
+    margin-right: 20px;
+}
+
+.login div{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    z-index: 7;
+    padding: 12px;
+    padding-left: 1px;
+    display: inline;
+    height: 150px;
+    width: 91px;
+    border: 1px solid white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.login div img{
+    position: relative;
+    top: 6px;
+    left: 8px;
+}
+
+.password-login{
+    margin-right: 25px;
+}
+
+.btn-login{
+    position:relative;
+    top:5px;
+    display: none;
+    width: 120px;
+    height: 42px;
+    border: 1px solid #ececec;
+    border-radius: 15px;
+    margin-right: 50px;
+    margin-top: 10px;
+    background-color: #0077b5;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn-login:hover{
+    cursor: pointer;
+    background-color: #5c9449;
+    border: 1px solid #5c9449;
+}
+
+.img-world{
+    margin-top: 86px;
+    margin-left: 15px;
+    width: 650px;
+}
+
+.header{
+    position: absolute;
+    left: 27%;
+    top: 80px;
+    width: 610px;
+    height: 466px;
+    float: right;
+    background-color: #34495E;
+    margin-top: 70px;
+    margin-right: 20px;
+    border-radius: 60px;
+    box-shadow: 0 4px 10px #000000;
+}
+
+.header img
+{
+    margin-left: 240px;
+    width: 130px;
+    height: 125px;
+    margin-top: -70px;
+    margin-bottom: 15px;
+}
+.name{
+    margin-top: -50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 257px;
+    height: 17px;
+    border-radius: 21px;
+    padding: 10px;
+    background-color: #0077b5;
+    border: 1px solid #ffffff;
+    color: white;
+}
+
+.signup-input{
+    margin-top: 17px;
+    width: 550px;
+    height: 17px;
+    border-radius: 24px;
+    border: none;
+    background-color: #0077b5;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    color: white;
+}
+
+.signup-password{
+}
+
+.label-gender{
+    margin-right: 223px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+
+.gender-male, .gender-female{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.gender-container{
+    width: 257px;
+    margin-right: 400px;
+}
+
+.gender{
+    margin-top: 20px;
+    
+    margin-left: 40px;
+}
+
+.label-birthdate{
+    color: #ffffff;
+    font-size: 30px;;
+}
+
+.birthdate-container{
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 34px;
+    display: inline;
+}
+
+.signup-date {
+    width: 203px;
+    margin-left: 31px;
+    margin-top: -10px;
+    border: none;
+    padding: 8px;
+    border: 1px solid #ffffff;
+    background-color: #0077b5;
+    border-radius: 25px;
+    color: white;
+}
+
+.btn-signup {
+    width: 172px;
+    height: 40px;
+    margin-top: -3px;
+    border: none;
+    border-radius: 27px;
+    background-color: #0077b5;
+    border: 1px solid #ffffff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-signup:hover{
+    cursor: pointer;
+    background-color: #5c9449;
+    border: 1px solid #5c9449;
+}
+
+.footer{
+    position: absolute;
+    width: 99%;
+    top: 673px;
+    height: 35px;
+    background-color: #030413;
+    color: white;
+}
+
+@media(max-width:1270px){
+    .img-world{
+        display: none;
+    }
+    .header{
+        left: 25%;
+    }
+}
+
+@media(max-width:1060px){
+    .login-input{
+        width: 180px;
+    }
+    .password-logo{
+        left: 312px;
+    }
+}
+
+@media(max-width:1000px){
+    .logo{
+        display: none;
+    }
+    .header{
+        left: 15%;
+    }
+}
+
+@media(max-width:800px){
+    .login-input{
+        width: 150px;
+    }
+    
+    .password-logo{
+        left: 283px;
+    }
+    
+    .btn-login{
+        width: 90px;
+    }
+    
+    .header{
+        left: 10%;
+    }
+}

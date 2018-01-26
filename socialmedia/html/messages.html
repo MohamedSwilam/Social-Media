@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Messages</title>
+        <link rel="stylesheet" href="../css/messages.css">
+    </head>
+    
+    <body>
+        
+        <!-- ------------------- Start Navbar ------------------- -->
+        <div class="nav-bar">
+            <div class="logo"><span>C</span>onnect</div>
+            <div class="search">
+                <form class="search-form" method="post">
+                    <input class="input-search" type="text" placeholder="Search" required>
+                    <button class="btn-search"><img src="../images/search.png"></button>
+                </form>
+            </div>
+            <div class="home-profile">
+                <button onclick="redirectHome()" class="btn-home-profile , btn-home">Home</button>
+                <button onclick="redirectProfile()" class="btn-home-profile , btn-profile">Profile</button>
+            </div>
+            
+            <img class="nav-menu" src="../images/menu-button-of-three-horizontal-lines.png">           
+            <div class="nav-bar-dropdown-menu">
+                <button onclick="redirectFriends()"><img src="../images/avatar.png">Friends<div class="counter">2</div></button>
+                <button onclick="redirectMessages()"><img src="../images/envelope.png">Messages<div class="counter">3</div></button>
+                <button onclick="redirectNotifications()"><img src="../images/notification.png">Notifications<div class="counter">4</div></button>
+            </div>
+        </div>
+        <!-- ------------------- End Navbar ------------------- -->
+        
+        <!-- ------------------ Start Messages ------------------ -->
+        <div class="perspective">
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                <h1><span>Mohamed Swilam: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                 <h1><span>Ahmed Walid: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                 <h1><span>Muhamed Ahmed: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                 <h1><span>Hossam Mohamed: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                <h1><span>Mohamed Swilam: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                 <h1><span>Ahmed Walid: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                 <h1><span>Muhamed Ahmed: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                 <h1><span>Hossam Mohamed: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                <h1><span>Mohamed Swilam: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                 <h1><span>Ahmed Walid: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                 <h1><span>Muhamed Ahmed: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                 <h1><span>Hossam Mohamed: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                <h1><span>Mohamed Swilam: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                 <h1><span>Ahmed Walid: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                 <h1><span>Muhamed Ahmed: </span>Hello, how are you today?</h1>
+            </div>
+            <div class="message-container" onclick="redirectmessage()">
+                <img src="../images/default.jpg" width="50px" height="50px" style="border-radius: 25px">
+                 <h1><span>Hossam Mohamed: </span>Hello, how are you today?</h1>
+            </div>
+        </div>
+        <!-- ------------------- End Messages ------------------- -->
+        
+        
+        <!-- ----------------- Start New Message ----------------- --> 
+        <div class="new-message"><center>+</center></div>
+        <!-- ----------------- End New Message ----------------- --> 
+        
+        <div class="choose-friend">
+            <input class="friend-search-input" type="text" placeholder="Find Friends..">
+            
+            <div class="friend-list">
+                <div class="friend friend1 first">
+                    <img src="../images/default.jpg">
+                    <span class="Name">Mohamed Ehab</span>
+                </div>
+                <div class="friend friend2">
+                    <img src="../images/default.jpg">
+                    <span class="Name">Muhamed Ahmed</span>
+                </div>
+                <div class="friend friend3">
+                    <img src="../images/default.jpg">
+                    <span class="Name">Hossam Mohamed</span>
+                </div>
+                <div class="friend friend4">
+                    <img src="../images/default.jpg">
+                    <span class="Name">Ahmed Walid</span>
+                </div>
+                <div class="friend friend5">
+                    <img src="../images/default.jpg">
+                    <span class="Name">Ehab Osama</span>
+                </div>
+                <div class="friend friend6">
+                    <img src="../images/default.jpg">
+                    <span class="Name">Hamada mansour</span>
+                </div>
+                <div class="friend friend7">
+                    <img src="../images/default.jpg">
+                    <span class="Name">Menna Tarek</span>
+                </div>
+                <div class="friend friend8">
+                    <img src="../images/default.jpg">
+                    <span class="Name">Yara Ehab</span>
+                </div>
+                <div class="friend friend9 last">
+                    <img src="../images/default.jpg">
+                    <span class="Name">Karim Khaled</span>
+                </div>
+            </div>
+            <div class="close"><center>Close</center></div>
+        </div>
+        
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery.nicescroll.js"></script>
+        <script src="../js/jquery.smooth-scroll.min.js"></script>
+        <script src="../js/messages.js"></script>
+        
+    </body>
+</html>

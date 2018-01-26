@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>friends</title>
+      <link rel="stylesheet" href="../css/sweetalert2.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/friends.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+  </head>
+    
+  <body>
+      <!-- ******************* Start Navbar ******************** -->
+    <div class="nav-bar">
+            <div class="logo"><span>C</span>onnect</div>
+            <div class="search">
+                <form class="search-form" method="post">
+                    <input class="input-search" type="text" placeholder="Search" required>
+                    <button class="btn-search"><img src="../images/search.png"></button>
+                </form>
+            </div>
+            <div class="home-profile">
+                <button onclick="redirectHome()" class="btn-home-profile , btn-home">Home</button>
+                <button onclick="redirectProfile()" class="btn-home-profile , btn-profile">Profile</button>
+            </div>
+            
+            <img class="nav-menu" src="../images/menu-button-of-three-horizontal-lines.png">           
+            <div class="nav-bar-dropdown-menu">
+                <button onclick="redirectFriends()"><img src="../images/avatar.png">Friends<div class="counter">2</div></button>
+                <button onclick="redirectMessages()"><img src="../images/envelope.png">Messages<div class="counter">3</div></button>
+                <button onclick="redirectNotifications()"><img src="../images/notification.png">Notifications<div class="counter">4</div></button>
+            </div>
+    </div>
+      
+      <!-- ******************* End Navbar ******************** -->
+
+    <center>
+        
+        <div class="friend-requests">
+            <fieldset>
+                <legend>Friend Requests</legend>
+                <div class="card">
+                    <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-accept">Accept</button><button class="btn-remove">Remove</button>
+                    </div>
+                </div>
+              <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-accept">Accept</button><button class="btn-remove">Remove</button>
+                    </div>
+                </div>
+                
+            </fieldset>
+         </div>
+         
+        <div class="suggestions">
+            <fieldset>
+                <legend>Suggestions</legend>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-connect">Connect</button>
+                    </div>
+                </div>
+               <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-connect">Connect</button>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-connect">Connect</button>
+                    </div>
+                </div>
+                
+                
+            </fieldset>
+         </div>
+               
+        <div class="friends-list">
+            <fieldset>
+                <legend>Friends List</legend>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+               <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+               <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+               <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+               <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+               <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+               <div class="card">
+                     <div class="front">
+                        <center>
+                        <img class="card-cover" src="../images/tropical-island.jpg">
+                        <img class ="card-img" src="../images/default.jpg">
+                            <p class="card-name">
+                                Hossam Mohamed
+                            </p>
+                            <p class="job">
+                                Student at MIU
+                            </p>
+
+                        </center>                
+                    </div>
+                    <div class="back">
+                        <button class="btn-view-profile">View Profile</button>
+                        <div class="social-media" style="border: none">
+                                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+                            </div>
+                        <button class="btn-message">Message</button>
+                    </div>
+                </div>
+                
+            </fieldset>
+         </div>
+        
+    </center>
+    
+      <script src="../js/jquery-3.2.1.min.js"></script>
+      <script src="../js/sweetalert2.min.js"></script>
+      <script src="../js/jquery.nicescroll.js"></script>
+      <script src="../js/friends.js"></script>
+  </body>
+</html>

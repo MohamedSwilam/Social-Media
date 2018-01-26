@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Saved Items</title>
+        <link rel="stylesheet" href="../css/sweetalert2.min.css">
+        <link rel="stylesheet" href="../css/saved-items.css">
+    </head>
+    
+    <body>
+        
+        <!-- ------------------ Start Navbar ------------------ -->
+        <div class="nav-bar">
+            <div class="logo"><span>C</span>onnect</div>
+            <div class="search">
+                <form class="search-form" method="post">
+                    <input class="input-search" type="text" placeholder="Search" required>
+                    <button class="btn-search"><img src="../images/search.png"></button>
+                </form>
+            </div>
+            <div class="home-profile">
+                <button onclick="redirectHome()" class="btn-home-profile , btn-home" style="background-color: #3242f6">Home</button>
+                <button onclick="redirectProfile()" class="btn-home-profile , btn-profile">Profile</button>
+            </div>
+            
+            <img class="nav-menu" src="../images/menu-button-of-three-horizontal-lines.png">           
+            <div class="nav-bar-dropdown-menu">
+                <button onclick="redirectFriends()"><img src="../images/avatar.png">Friends<div class="counter">2</div></button>
+                <button onclick="redirectMessages()"><img src="../images/envelope.png">Messages<div class="counter">3</div></button>
+                <button onclick="redirectNotifications()"><img src="../images/notification.png">Notifications<div class="counter">4</div></button>
+            </div>
+        </div>
+        
+        <!-- ------------------ End Navbar ------------------ -->
+        
+        <!-- ------------------ Start myInfo ------------------ -->
+        
+        <div class="my-info">
+            <center><img class="my-info-img" src="../images/default.jpg" width="100px" height="100px" style="border-radius: 50px;"></center>
+            <hr class="hr1">
+            <div class="info-title"><a class="info-name" href="profile.html">Mohamed Ehab Swilam</a><p class="info-job">Student at MIU</p></div>
+            <center><div class="social-media">
+                <a href="#"><img src="../images/facebook.png" title="Facebook !"></a>
+                <a href="#"><img src="../images/twitter.png" title="Twitter !"></a>
+                <a href="#"><img src="../images/instagram.png" title="Instgram !"></a>
+                <a href="#"><img src="../images/linkedin.png" title="Linkedin !"></a>
+                <a href="#"><img src="../images/google-plus.png" title="Google+ !"></a>
+            </div></center>
+            
+            <center>
+                <div class="info-menu">
+                    
+                    <div onclick="redirectSettings()"><p><img src="../images/settings.png">Settings</p></div>
+                    <div onclick="redirectSavedItems()"><p><img src="../images/star.png">Saved Items</p></div>
+                    <div onclick="redirectIndex()"><p><img src="../images/exit.png">Logout</p></div>
+
+                </div>
+            </center>
+            
+            <center>
+                <div class="down-arrow-menu">
+                <img class="down-arrow-menu-img" src="../images/down-arrow.png">
+                </div>
+            </center>
+            
+            
+        </div>
+        
+        <!-- ------------------ End MyInfo ------------------ -->
+        
+        <!-- ------------------ Start Posts ------------------ -->
+        <div class="post-container">
+            <div class="post">
+                <img class="post-img-owner" src="../images/default.jpg">
+                <img src="../images/angle-arrow-down.png" class="post-down-arrow" id="p1">
+                <div class="dropdown-edit-post" id="dropdown-toggle-p1">
+                    <button class="btn-unsave">Unsave</button>
+                    <button>Edit</button>
+                    <button class="btn-delete">Delete</button>
+                </div>
+                <div class="post-name"><a href="profile.html">Mohamed Ehab Swilam</a></div>
+                <div class="post-time">Sun - 10:22PM</div>
+                <hr>
+                <div class="post-content">Hello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamed</div>
+                <br>
+                <div class="post-img"><center><img src="../images/330816e4bcb768d2eb0e4aba56674f18.png"></center></div>
+                <div class="reactions">8 Likes - 3 Comments - 2 Shares</div>
+                <hr class="hr-post">
+                <button class="btn-like" id="p1">
+                    <img id="like-1-p1" src="../images/like.png">
+                    <img class="like-img-selected" id="like-2-p1" src="../images/like-selected.png">
+                    <span class="like-txt">Like</span>
+                </button>
+                <button class="btn-comment" id="p1"><img src="../images/comment-white-oval-bubble.png"><span class="comment-txt">Comment</span></button>
+                <button class="btn-share"><img src="../images/share.png"><span class="share-txt">Share</span></button>
+                <div class="comment" id="comment-toggle-p1">
+                    <hr>
+                    <form method="post">
+                        <textarea class="comment-input"></textarea>
+                        <button class="btn-comment-2">Comment</button>
+                    </form>
+                    <br>
+                    <div class="all-comments">
+                        <div class="post-comment">
+                            <img class="post-comment-img" src="../images/default.jpg">
+                            <b class="post-comment-name"><a href="#">Mohamed Swilam</a></b>
+                            <h6 class="post-comment-date">03/11/2017 8:24 PM</h6>
+                            <i class="post-comment-content">Hello my name is swilam </i>
+                        </div>
+                        <hr>
+                        <div class="post-comment">
+                            <img class="post-comment-img" src="../images/default.jpg">
+                            <b class="post-comment-name"><a href="#">Mohamed Swilam</a></b>
+                            <h6 class="post-comment-date">03/11/2017 8:24 PM</h6>
+                            <i class="post-comment-content">Hello my name is swilam </i>
+                        </div>
+                        <hr>
+                        <div class="post-comment">
+                            <img class="post-comment-img" src="../images/default.jpg">
+                            <b class="post-comment-name"><a href="#">Mohamed Swilam</a></b>
+                            <h6 class="post-comment-date">03/11/2017 8:24 PM</h6>
+                            <i class="post-comment-content">Hello my name is swilam </i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <img class="post-img-owner" src="../images/default.jpg">
+                <img src="../images/angle-arrow-down.png" class="post-down-arrow" id="p2">
+                <div class="dropdown-edit-post" id="dropdown-toggle-p2">
+                    <button class="btn-unsave">Unsave</button>
+                    <button>Edit</button>
+                    <button class="btn-delete">Delete</button>
+                </div>
+                <div class="post-name"><a href="profile.html">Mohamed Ehab Swilam</a></div>
+                <div class="post-time">Sun - 10:22PM</div>
+                <hr>
+                <div class="post-content">Hello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamedHello, My name is mohamed</div>
+                <br>
+                <div class="post-img"><center><img src="../images/330816e4bcb768d2eb0e4aba56674f18.png"></center></div>
+                <div class="reactions">8 Likes - 3 Comments - 2 Shares</div>
+                <hr class="hr-post">
+                <button class="btn-like" id="p2">
+                    <img id="like-1-p2" src="../images/like.png">
+                    <img class="like-img-selected" id="like-2-p2" src="../images/like-selected.png">
+                    <span class="like-txt">Like</span></button>
+                <button class="btn-comment" id="p2"><img src="../images/comment-white-oval-bubble.png"><span class="comment-txt">Comment</span></button>
+                <button class="btn-share"><img src="../images/share.png"><span class="share-txt">Share</span></button>
+                <div class="comment" id="comment-toggle-p2">
+                    <hr>
+                    <form method="post">
+                        <textarea class="comment-input"></textarea>
+                        <button class="btn-comment-2">Comment</button>
+                    </form>
+                    <br>
+                    <div class="all-comments">
+                        <div class="post-comment">
+                            <img class="post-comment-img" src="../images/default.jpg">
+                            <b class="post-comment-name"><a href="#">Mohamed Swilam</a></b>
+                            <h6 class="post-comment-date">03/11/2017 8:24 PM</h6>
+                            <i class="post-comment-content">Hello my name is swilam </i>
+                        </div>
+                        <hr>
+                        <div class="post-comment">
+                            <img class="post-comment-img" src="../images/default.jpg">
+                            <b class="post-comment-name"><a href="#">Mohamed Swilam</a></b>
+                            <h6 class="post-comment-date">03/11/2017 8:24 PM</h6>
+                            <i class="post-comment-content">Hello my name is swilam </i>
+                        </div>
+                        <hr>
+                        <div class="post-comment">
+                            <img class="post-comment-img" src="../images/default.jpg">
+                            <b class="post-comment-name"><a href="#">Mohamed Swilam</a></b>
+                            <h6 class="post-comment-date">03/11/2017 8:24 PM</h6>
+                            <i class="post-comment-content">Hello my name is swilam </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------ End Posts ------------------ -->
+        
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/sweetalert2.min.js"></script>
+        <script src="../js/jquery.nicescroll.js"></script>
+        <script src="../js/jquery.smooth-scroll.min.js"></script>
+        <script src="../js/saved-items.js"></script>
+    </body>
+</html>

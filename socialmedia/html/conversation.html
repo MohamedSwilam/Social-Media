@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Conversation</title>
+        <link rel="stylesheet" href="../css/conversation.css">
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="logo"><span>C</span>onnect</div>
+            <div class="search">
+                <form class="search-form" method="post">
+                    <input class="input-search" type="text" placeholder="Search" required>
+                    <button class="btn-search"><img src="../images/search.png"></button>
+                </form>
+            </div>
+            <div class="home-profile">
+                <button onclick="redirectHome()" class="btn-home-profile , btn-home">Home</button>
+                <button onclick="redirectProfile()" class="btn-home-profile , btn-profile">Profile</button>
+            </div>
+            
+            <img class="nav-menu" src="../images/menu-button-of-three-horizontal-lines.png">           
+            <div class="nav-bar-dropdown-menu">
+                <button onclick="redirectFriends()"><img src="../images/avatar.png">Friends<div class="counter">2</div></button>
+                <button onclick="redirectMessages()"><img src="../images/envelope.png">Messages<div class="counter">3</div></button>
+                <button onclick="redirectNotifications()"><img src="../images/notification.png">Notifications<div class="counter">4</div></button>
+            </div>
+    </div>
+        
+        <div class="conversation-content">
+            <div class="msg">
+                <div class="left-msg">Eh yasta 3amel eh?</div>
+            </div>
+            <div class="msg">
+                <div class="right-msg">B5er ya basha tol manta b5eer</div>
+            </div>
+            <div class="msg">
+                <div class="left-msg">7abyby ya zomol</div>
+            </div>
+            <div class="msg">
+                <div class="left-msg">Eh yasta 3amel eh?</div>
+            </div>
+            <div class="msg">
+                <div class="right-msg">B5er ya basha tol manta b5eer</div>
+            </div>
+            <div class="msg">
+                <div class="left-msg">7abyby ya zomol</div>
+            </div>
+            <div class="msg">
+                <div class="left-msg">Eh yasta 3amel eh?</div>
+            </div>
+            <div class="msg">
+                <div class="right-msg">B5er ya basha tol manta b5eer</div>
+            </div>
+            <div class="msg">
+                <div class="left-msg">7abyby ya zomol</div>
+            </div>
+            <div class="msg">
+                <div class="left-msg">Eh yasta 3amel eh?</div>
+            </div>
+            <div class="msg">
+                <div class="right-msg">B5er ya basha tol manta b5eer</div>
+            </div>
+            <div class="msg">
+                <div class="right-msg">B5er ya basha tol manta b5eer</div>
+            </div>
+            <div class="msg">
+                <div class="right-msg">B5er ya basha tol manta b5eer</div>
+            </div>
+            <div class="msg">
+                <div class="left-msg">7abyby ya zomol</div>
+            </div>
+            <div class="msg">
+                <div class="right-msg">B5er ya basha tol manta b5eer</div>
+            </div>
+            <div class="msg">
+                <div class="left-msg">7abyby ya zomol</div>
+            </div>
+            <div class="msg">
+                <div class="right-msg">B5er ya basha tol manta b5eer</div>
+            </div>
+            <div class="msg">
+                <div class="left-msg">7abyby ya zomol</div>
+            </div>
+            <div class="msg">
+                <div class="right-msg">B5er ya basha tol manta b5eer</div>
+            </div>
+            <div class="msg">
+                <div class="left-msg">7abyby ya zomol</div>
+            </div>
+                        
+        </div>
+        
+        
+        <div class="send-message">
+            <form>
+                <textarea class="txt-msg" placeholder="Type your message here.."></textarea>
+                <button class="btn-send-msg">Send Message</button>
+            </form>
+        </div>
+        
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery.nicescroll.js"></script>
+        <script src="../js/jquery.smooth-scroll.min.js"></script>
+        <script src="../js/conversation.js"></script>
+    </body>
+</html>
